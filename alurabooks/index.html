@@ -21,8 +21,8 @@
     <header class="cabeçalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu"></label>
-            <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
@@ -103,7 +103,8 @@
                 <ul class="botões">
                     <li class="botoes__item"><img src="./assets/images/Favoritos.svg" alt="Favoritar livro"></li>
 
-                    <li class="botoes__item"><img src="./assets/images/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    <li class="botoes__item"><img src="./assets/images/Compras.svg"
+                            alt="Adicionar no carrinho de compras"></li>
                 </ul>
                 <!-- 2º coluna -->
                 <a href="a" class="botões__ancora">Saiba mais</a>
@@ -111,6 +112,105 @@
         </div>
 
     </section>
+
+    <section class="carrosel-2">
+        <h2 class="carrosel__titulo">Mais Vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/images/ApacheKafka.png" alt="Livro de ApacheKafka"></div>
+
+                <div class="swiper-slide"><img src="./assets/images/Guia Front-end.png" alt="Livro Guia de Front-End">
+                </div>
+
+                <div class="swiper-slide"><img src="./assets/images/Javascript.png" alt="Livro de JavaScript"></div>
+
+                <div class="swiper-slide"><img src="./assets/images/Liderança.png" alt="Livro de liderança em Design">
+                </div>
+
+                <div class="swiper-slide"><img src="./assets/images/Portugol.png" alt="Livro de JavaScript"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <img src="./assets/images/Estrelinhas.png" alt="Estrelas da autora" class="descrição__estrela">
+                    <h3 class="descrição__titulo">Autora do Mês</h3>
+                    <h2 class="descrição__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End
+                    </p>
+
+                </div>
+                <!-- 2º coluna -->
+                <img src="./assets/images/Perfil-escritora 1-1.png" class="descrição__imagem">
+            </div>
+            <!-- 2ºlinha -->
+            <div class="card__botões">
+                <!-- 1º coluna -->
+                <ul class="botões">
+                    <li class="botoes__item"><img src="./assets/images/Favoritos.svg" alt="Favoritar livro"></li>
+
+                    <li class="botoes__item"><img src="./assets/images/Compras.svg"
+                            alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <!-- 2º coluna -->
+                <a href="a" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="a" class="topicos__link">Android</a>
+            </li>
+            <li class="topicos__item">
+                <a href="a" class="topicos__link">Marketin Digital</a>
+            </li>
+            <li class="topicos__item">
+                <a href="a" class="topicos__link">Agile</a>
+            </li>
+            <li class="topicos__item">
+                <a href="a" class="topicos__link">Startups</a>
+            </li>
+            <li class="topicos__item">
+                <a href="a" class="topicos__link">HTML e CSS</a>
+            </li>
+            <li class="topicos__item">
+                <a href="a" class="topicos__link">Python</a>
+            </li>
+            <li class="topicos__item">
+                <a href="a" class="topicos__link">OO</a>
+            </li>
+            <li class="topicos__item">
+                <a href="a" class="topicos__link">Java</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das Novidades</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <input type="email" placeholder="Cadastre seu email" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Alura</h2>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
@@ -124,4 +224,5 @@
         });
     </script>
 </body>
+
 </html>
